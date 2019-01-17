@@ -3,7 +3,7 @@ Pyrocko based functions to convert quakeML and stationXML datasets to HypoDD for
 Short description of provided python functions: 
 * *quakeml2phaseDD* is used to convert a catalog of earthquake events from quakeMl format to hypoDD input format ("catalog of absolute travel time data, e.g. file phase.dat")
 * *stationXML2stationDD* is used to convert a seismic network inventory from stationXML format to hypoDD input format ("station input, e.g. station.dat"
-* *reloc2quakeml* is used to convert hypoDD output after relocation (hypoDD.reloc) into an earthquake catalog in quakeML format. Initial hypocenter locations can be taken from original quakeML catalog (event identification performed with "convID.txt" file) or HypoDD output-file "hypoDD.loc".
+* *relocDD2quakeml* is used to convert hypoDD output after relocation (hypoDD.reloc) into an earthquake catalog in quakeML format. Initial hypocenter locations can be taken from original quakeML catalog (event identification performed with "convID.txt" file) or HypoDD output-file "hypoDD.loc".
 
 
 ### Requirements
