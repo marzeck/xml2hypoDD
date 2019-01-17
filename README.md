@@ -5,6 +5,8 @@ Short description of provided python functions:
 * *stationXML2stationDD* is used to convert a seismic network inventory from stationXML format to hypoDD input format ("station input, e.g. station.dat"
 * *relocDD2quakeml* is used to convert hypoDD output after relocation (hypoDD.reloc) into an earthquake catalog in quakeML format. Initial hypocenter locations can be taken from original quakeML catalog (event identification performed with "convID.txt" file) or HypoDD output-file "hypoDD.loc".
 
+Keep in mind, the presented functions are constructed for the catalog-based relocation and do not take into account any cross-correlation.
+
 
 ### Requirements
 * python
