@@ -20,7 +20,7 @@ def stationXML2stationDD(filename, output='station.dat'):
 	elif isinstance(filename, list):
 		inv = stationxml.load_xml(filename=filename[0])
 		for fi in filename[1:]:
-			inv.extend(stationxml.load_xml(filename=fi).network_list)
+			inv.network_list.extend(stationxml.load_xml(filename=fi).network_list)
 
 	outStat = []
 	for netStat in inv.ns_code_list:
@@ -115,7 +115,7 @@ def quakeml2phaseDD(filename, output='phase.dat', convID=True, confirmed=True):
 					pick.waveform_id.station_code),
 				travel_time=(
 					pick.time.value -
-					ev.preferred_origin.time.value),
+					event.preferred_origin.time.value),
 				weight=1,
 				phase=pick.phase_hint.value[0])
 			if pickString not in stringList:
